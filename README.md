@@ -1,5 +1,5 @@
-# EiT-IoT-project
 ## Eksperter i Team
+### The Big Bang of Internet
 Nettsidens jobb er å presentere lyddat(dB) som bestemmer om nærområdsparker er i bruk.
 Målingene har også nytte for Trondheim Kommune for  kartlegging av støy knyttet til slike anlegg.
 
