@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Chart } from "react-google-charts";
-
-//google.charts.load('current', { 'packages': ['corechart'] });
+import Alert from 'react-bootstrap/Alert';
 
 class Graph extends Component {
-
   render() {
-    return (
-      <Chart
-        chartType="ScatterChart"
-        data={[["dB", "Time"], [4, 55], [6, 63], [8, 73]]}
-        width="100%"
-        height="500px"
-        legendToggle
-      />
-    );
+    if (this.props.datoSort[this.props.activekey]) {
+      return (
+        <div>
+          {this.props.datoSort[this.props.activekey] ?
+            <Chart
+              chartType="ScatterChart"
+              data={this.props.datoSort[this.props.activekey]}
+              width="100%"
+              height="100%"
+              legendToggle
+            /> : <Alert variant="danger">Failed to fetch data for graph.</Alert>}
+        </div>
+      );
+    } else {
+      return (<Alert variant="danger">Det har skjedd en feil i grafen</Alert>);
+    }
   }
 }
 

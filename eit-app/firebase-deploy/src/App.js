@@ -11,7 +11,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <main>
-        <h1 className="display-3">Bruks data</h1>
         <ContainerHolder></ContainerHolder>
       </main>
       <footer>

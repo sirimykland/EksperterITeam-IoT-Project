@@ -2,9 +2,14 @@ tfoot {
   color:	#606060;
 }
 
+.table-container{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
 footer {
   color:	#808080;
   background-color: #F0F0F0;
   padding: 5vh;
-  margin-top: 7vh;
+  margin-top: 3vh;
 }
