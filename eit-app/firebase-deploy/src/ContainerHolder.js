@@ -61,8 +61,9 @@ class ContainerHolder extends Component {
     var keys = Object.keys(this.state.datoSort);
     return (
       <Container>
-        <h1 className="display-3">Bruks data </h1>
-        {this.state.chosenDate ? <h4> for {new Date(this.state.chosenDate).toLocaleDateString('nb-NO')}</h4> : "Choose Date"}
+        <h1 className="display-3">Måledata </h1>
+        <h1 className="display-5">for lyd i nærmiljøanlegg </h1>
+        {this.state.chosenDate ? <h4> {new Date(this.state.chosenDate).toLocaleDateString('nb-NO',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</h4> : "Choose Date"}
         {keys ? keys.map(date => (
           <React.Fragment key={date}>
             <Button onClick={() => this.newDate(date)} variant="outlined">{date}</Button>
